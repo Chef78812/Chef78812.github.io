@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI HACK - Сигналы для игр</title>
+    <title>Rich Ai Signal - Сигналы для игр</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* Основные стили */
@@ -109,6 +109,7 @@
             margin-bottom: 15px;
             object-fit: cover;
             transition: transform 0.3s ease;
+            z-index: 1;
         }
 
         /* Заголовки в ссылках */
@@ -117,8 +118,9 @@
             font-size: 1.4em;
             font-weight: 600;
             transition: transform 0.3s ease;
-            margin: 0; /* Убираем отступы */
-            line-height: 1.2em; /* Для лучшего выравнивания текста на мобильных */
+            margin: 0;
+            line-height: 1.2em;
+            z-index: 1;
         }
 
         /* Эффекты при наведении */
@@ -155,8 +157,8 @@
             color: white;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            z-index: 2; /* Повышаем z-index, чтобы оставалась видимой */
-            pointer-events: none; /* Не перекрывает ссылки */
+            z-index: 2;
+            pointer-events: none;
         }
 
         /* Адаптивные стили для телефонов */
@@ -228,9 +230,9 @@
     </style>
 </head>
 <body>
-    <div class="animated-background"></div> <!-- Анимированный фон -->
+    <div class="animated-background"></div>
 
-    <h1>AI HACK</h1>
+    <h1>Rich Ai Signal</h1>
     <p>Выберите игру для получения сигнала:</p>
 
     <div class="game-container">
@@ -253,7 +255,7 @@
 
     <script>
         function openGameWindow(page) {
-            window.open(page, '_blank', 'width=600,height=600');
+            window.location.href = page;
         }
     </script>
 </body>
